@@ -73,7 +73,7 @@ public class QuizManager : MonoBehaviour
     {
         
         bool isCorrect = IsAnswerCorrect(selectedAnswerIndex);
-        resultText.text = isCorrect ? "Правильно!" : "Неправильно!";
+        resultText.text = isCorrect ? "Верно!" : "Неправильно!";
         resultText.color = isCorrect ? Color.green : Color.red;
         resultObject.SetActive(true);
         if (isCorrect)
